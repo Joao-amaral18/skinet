@@ -1,7 +1,7 @@
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastucture.Data
+namespace Infrastructure.Data
 {
     public class StoreContext : DbContext
     {
@@ -10,5 +10,7 @@ namespace Infrastucture.Data
         {
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductBrand> ProductBrand { get; set; }
+        public DbSet<ProductType> ProductType { get; set; }
     }
 }
