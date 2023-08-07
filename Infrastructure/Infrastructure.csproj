@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20230803200541_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20230803200541_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20230804204101_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20230804204101_InitialCreate.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SeedData\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Infrastructure</RootNamespace>
+  </PropertyGroup>
+</Project>
